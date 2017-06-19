@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lesson-jsp:war exploded">
+    <output-path>$PROJECT_DIR$/target/lesson-jsp</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lesson-jsp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/lesson-jsp/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="lesson-jsp/web/Web" />
+    </root>
+  </artifact>
+</component>
