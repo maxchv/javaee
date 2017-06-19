@@ -52,13 +52,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">CSS Selectors</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <%--<li><a href="#about">About</a></li>--%>
+                <%--<li><a href="#contact">Contact</a></li>--%>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -73,18 +73,31 @@
             </header>
 
             <ul>
-                <li>Выбрать <span class="text-primary">input</span> типа <span class="text-primary">checkbox</span>.</li>
-                <li>Выбрать <span class="text-primary">input</span> типа <span class="text-primary">checkbox</span>, <span class="text-danger">НЕ</span> отмеченный.</li>
-                <li>Найти все элементы с id=message или message-*.</li>
-                <li>Найти все элементы с id=message-*.</li>
-                <li>Найти все ссылки с расширением href="...zip".</li>
-                <li>Найти все элементы с атрибутом data-action, содержащим delete в списке (через пробел).</li>
-                <li>Найти все элементы, у которых ЕСТЬ атрибут data-action, но он НЕ содержит delete в списке (через
-                    пробел).</li>
-                <li>Выбрать все чётные элементы списка #messages.</li>
-                <li>Выбрать один элемент сразу за заголовком h3#widget-title на том же уровне вложенности.</li>
-                <li>Выбрать все ссылки, следующие за заголовком h3#widget-title на том же уровне вложенности.</li>
-                <li>Выбрать ссылку внутри последнего элемента списка #messages.</li>
+                <li>Выбрать <span class="text-primary">input</span> типа <span class="text-primary">checkbox</span>.
+                </li>
+                <li>Выбрать <span class="text-primary">input</span> типа <span class="text-primary">checkbox</span>,
+                    <span class="text-danger">НЕ</span> отмеченный.
+                </li>
+                <li>Найти все элементы с <span class="text-primary">id=message</span> или <span class="text-primary">message-*</span>.
+                </li>
+                <li>Найти все элементы с <span class="text-primary">id=message-*</span>.</li>
+                <li>Найти все ссылки с расширением <span class="text-primary">href="...zip"</span>.</li>
+                <li>Найти все элементы с атрибутом <span class="text-primary">data-action</span>, содержащим <span
+                        class="text-primary">delete</span> в списке (через пробел).
+                </li>
+                <li>Найти все элементы, у которых <span class="text-danger">ЕСТЬ</span> атрибут <span
+                        class="text-primary">data-action</span>, но он <span class="text-danger">НЕ</span>
+                    содержит <span class="text-primary">delete</span> в списке (через
+                    пробел).
+                </li>
+                <li>Выбрать все чётные элементы списка <span class="text-primary">#messages</span>.</li>
+                <li>Выбрать один элемент сразу за заголовком <span class="text-primary">h3#widget-title</span> на том же
+                    уровне вложенности.
+                </li>
+                <li>Выбрать все ссылки, следующие за заголовком <span class="text-primary">h3#widget-title</span> на том
+                    же уровне вложенности.
+                </li>
+                <li>Выбрать ссылку внутри последнего элемента списка <span class="text-primary">#messages</span>.</li>
             </ul>
         </div>
     </div>
@@ -95,7 +108,8 @@
 
                 <div class="form-group">
                     <label class="sr-only" for="select">Selector</label>
-                    <input type="text" class="form-control" name="select" id="select" value="${param.select}" placeholder="Selector ...">
+                    <input size="50" type="text" class="form-control" name="select" id="select" value="${param.select}"
+                           placeholder="Selector ...">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
